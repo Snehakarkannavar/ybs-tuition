@@ -118,7 +118,7 @@ export default function Navbar() {
           </Button>
 
           <Button 
-            className="bg-primary hover:bg-primary/90 text-white rounded-full font-bold shadow-lg shadow-primary/25"
+            className="bg-primary hover:bg-primary/90 text-white rounded-full font-bold shadow-lg shadow-primary/25 px-6"
             onClick={() => scrollToSection("#contact")}
           >
             Join Now

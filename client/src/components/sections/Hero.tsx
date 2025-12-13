@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronRight } from "lucide-react";
+import generatedBackground from "@assets/generated_images/abstract_modern_educational_background_with_geometric_shapes.png";
 
 const slides = [
   {
@@ -36,12 +37,21 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden bg-slate-950">
+      {/* Static Background Layer (Generated Image) with Low Opacity */}
+      <div className="absolute inset-0 z-0">
+         <img 
+            src={generatedBackground} 
+            alt="Abstract Background" 
+            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
+         />
+      </div>
+
       {/* Background Slideshow */}
       <AnimatePresence mode="popLayout">
         <motion.div
           key={slides[currentSlide].id}
           initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 0.5, scale: 1 }}
+          animate={{ opacity: 0.4, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0 z-0"
@@ -52,27 +62,27 @@ export default function Hero() {
             className="w-full h-full object-cover object-center"
           />
           {/* Gradient Overlay - Always Dark for text visibility */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/50 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center">
-        <div className="max-w-3xl space-y-6">
+        <div className="max-w-3xl space-y-8">
           <motion.div
             key={`text-${currentSlide}`}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/30 text-sm font-semibold mb-4 backdrop-blur-sm">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary border border-primary/30 text-sm font-semibold mb-6 backdrop-blur-sm shadow-lg shadow-primary/10">
               Admissions Open for 2025-26
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-tight drop-shadow-lg">
               {slides[currentSlide].title}
             </h1>
-            <p className="text-lg md:text-2xl text-slate-300 mt-4 max-w-xl font-light">
+            <p className="text-lg md:text-2xl text-slate-200 mt-6 max-w-xl font-light leading-relaxed drop-shadow-md">
               {slides[currentSlide].subtitle}
             </p>
           </motion.div>
@@ -81,11 +91,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 mt-8"
+            className="flex flex-col sm:flex-row gap-5 mt-10"
           >
             <Button 
               size="lg" 
-              className="text-lg px-8 py-6 rounded-full font-bold shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 text-white group"
+              className="text-lg px-10 py-7 rounded-full font-bold shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 text-white group transition-all hover:scale-105"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Tuition
@@ -94,7 +104,7 @@ export default function Hero() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="text-lg px-8 py-6 rounded-full font-bold backdrop-blur-md bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              className="text-lg px-10 py-7 rounded-full font-bold backdrop-blur-md bg-white/10 border-white/20 hover:bg-white/20 text-white hover:border-white/40 transition-all hover:scale-105"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Us
