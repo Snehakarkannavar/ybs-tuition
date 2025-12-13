@@ -1,0 +1,196 @@
+You are a senior UI/UX designer and full-stack web developer.
+
+Create an OFFICIAL, PUBLIC-FACING, AESTHETIC WEBSITE for “YBS Tuition”.
+
+This is NOT a payment website.
+This is NOT a student management website.
+This is a promotional, informational, brand-building website.
+
+The goal:
+When someone opens the website, they should instantly feel:
+• Trust
+• Professionalism
+• Positive learning environment
+• Attraction to join the tuition
+
+------------------------------------
+TECH STACK
+------------------------------------
+Frontend:
+- React (preferred)
+- Modern CSS / Tailwind CSS
+- Framer Motion for smooth animations
+- Responsive design (mobile + desktop)
+
+Backend (lightweight, admin-only):
+- PHP OR Node.js (only for content updates & reviews)
+- MySQL (optional, only for reviews & editable content)
+
+Hosting:
+- Must work on Replit
+- Public link viewable by anyone
+
+------------------------------------
+GENERAL RULES
+------------------------------------
+- NO login for users
+- NO payment system
+- NO student personal data
+- ONLY owner/admin can modify content
+- Everyone else can only VIEW
+
+------------------------------------
+WEBSITE SECTIONS
+------------------------------------
+
+1. HERO / OPENING SECTION (VERY IMPORTANT)
+------------------------------------
+- Full-screen landing section
+- Aesthetic slideshow / carousel:
+  • Student celebrations
+  • Classes
+  • Events
+  • Achievements
+- Smooth transitions
+- Inspirational tagline for YBS Tuition
+- Call-to-action buttons:
+  • “Explore Tuition”
+  • “Contact Us”
+
+------------------------------------
+2. ABOUT YBS TUITION
+------------------------------------
+- Tuition introduction
+- Years of experience (editable)
+- Mission & teaching philosophy
+- Animated counters (editable):
+  • 10+ Students
+  • X+ Years Experience
+  • 100% Dedication
+(No fake data, values must be editable)
+
+------------------------------------
+3. TEACHER SECTION
+------------------------------------
+- Two teachers displayed as profile cards
+Each card contains:
+- Teacher photo
+- Name
+- Qualification
+- Experience
+- Subject specialization
+- Short teaching philosophy
+
+Professional card animations on hover
+
+------------------------------------
+4. GALLERY SECTION
+------------------------------------
+- Image gallery (grid + masonry layout)
+- Support uploading:
+  • Images
+  • Videos
+- Smooth lightbox preview
+- Admin can add/remove media
+- Videos should play inline
+
+------------------------------------
+5. INSTAGRAM INTEGRATION (KEY FEATURE)
+------------------------------------
+- Connect to the PUBLIC Instagram account of “YBS Tuition”
+- Fetch and display:
+  • Posts
+  • Reels
+  • Videos
+
+Display:
+- Instagram feed embedded in website
+- Reels autoplay silently in a side section
+- Clicking any post/reel:
+  → Redirects to official Instagram page
+
+IMPORTANT:
+- Users can VIEW content only
+- Like/Comment requires Instagram login
+- Follow button redirects to Instagram
+
+Use Instagram embed / public API safely
+
+------------------------------------
+6. REVIEWS & TESTIMONIALS
+------------------------------------
+- Review cards section
+- Anyone can:
+  • Write a review
+  • Upload optional image
+- On submit:
+  • Review auto-appears on website
+- Backend moderation toggle for admin (optional)
+
+------------------------------------
+7. UPDATES / ANNOUNCEMENTS SECTION
+------------------------------------
+- Tuition updates
+- Portion updates
+- New batches info
+- Extra activities
+(Text will be editable by admin)
+
+------------------------------------
+8. CONTACT SECTION
+------------------------------------
+- Tuition contact details:
+  • Phone number
+  • Email
+- Location:
+  • Google Maps embed
+- Simple contact form (optional)
+
+------------------------------------
+9. HEADER & FOOTER
+------------------------------------
+Header:
+- Logo
+- Smooth navigation
+- Sticky navbar
+- Theme toggle (Light / Dark)
+
+Footer:
+- Tuition name: “YBS Tuition”
+- Social media icons
+- Instagram link
+- Copyright
+
+------------------------------------
+DESIGN & UI REQUIREMENTS
+------------------------------------
+- Premium, aesthetic look
+- Soft gradients
+- Clean typography
+- Smooth animations (Framer Motion)
+- Dark / Light theme toggle
+- Inspired by PhysicsWallah & modern ed-tech sites
+- NOT a simple static site
+
+------------------------------------
+ADMIN CONTENT CONTROL
+------------------------------------
+- Only owner can modify:
+  • Images
+  • Videos
+  • Text
+  • Numbers
+  • Reviews (optional moderation)
+- No public login system required
+
+------------------------------------
+DELIVERABLES
+------------------------------------
+Generate:
+1. Complete React frontend
+2. Backend APIs (for reviews & content)
+3. Database schema (if used)
+4. Instructions to run on Replit
+5. Well-commented, clean code
+
+Website must be visually impressive, modern, and attractive.
