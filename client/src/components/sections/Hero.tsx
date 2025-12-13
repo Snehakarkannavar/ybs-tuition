@@ -35,13 +35,13 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-black">
+    <section className="relative h-screen w-full overflow-hidden bg-slate-950">
       {/* Background Slideshow */}
       <AnimatePresence mode="popLayout">
         <motion.div
           key={slides[currentSlide].id}
           initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 0.6, scale: 1 }}
+          animate={{ opacity: 0.5, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0 z-0"
@@ -51,9 +51,9 @@ export default function Hero() {
             alt="Hero Background"
             className="w-full h-full object-cover object-center"
           />
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/20 to-transparent" />
+          {/* Gradient Overlay - Always Dark for text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
@@ -69,10 +69,10 @@ export default function Hero() {
             <span className="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary border border-primary/30 text-sm font-semibold mb-4 backdrop-blur-sm">
               Admissions Open for 2025-26
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold text-foreground leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold text-white leading-tight">
               {slides[currentSlide].title}
             </h1>
-            <p className="text-lg md:text-2xl text-muted-foreground mt-4 max-w-xl font-light">
+            <p className="text-lg md:text-2xl text-slate-300 mt-4 max-w-xl font-light">
               {slides[currentSlide].subtitle}
             </p>
           </motion.div>
@@ -83,11 +83,20 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 mt-8"
           >
-            <Button size="lg" className="text-lg px-8 py-6 rounded-full font-bold shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 text-white group">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 rounded-full font-bold shadow-xl shadow-primary/20 bg-primary hover:bg-primary/90 text-white group"
+              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Explore Tuition
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 rounded-full font-bold backdrop-blur-md bg-background/10 border-foreground/20 hover:bg-background/20 text-foreground">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-6 rounded-full font-bold backdrop-blur-md bg-white/10 border-white/20 hover:bg-white/20 text-white"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Contact Us
             </Button>
           </motion.div>

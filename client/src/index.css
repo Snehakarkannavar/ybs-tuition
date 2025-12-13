@@ -55,34 +55,34 @@
   --radius: 0.75rem;
 
   /* Clean White/Gray Theme with Vibrant Orange/Blue accents */
-  --background: 210 40% 98%; /* Soft cool white */
-  --foreground: 222 47% 11%; /* Deep navy */
+  --background: 210 20% 99%; /* Crisper white */
+  --foreground: 222 47% 15%; /* Softer Navy for text */
 
   --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
+  --card-foreground: 222 47% 15%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 222 47% 11%;
+  --popover-foreground: 222 47% 15%;
 
-  /* Brand Orange from Flyer */
-  --primary: 24 95% 53%; /* #F97316 */
+  /* Brand Orange from Flyer - Adjusted slightly for better contrast on white */
+  --primary: 24 95% 53%; 
   --primary-foreground: 0 0% 100%;
 
   /* Soft Blue/Slate for secondary */
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222 47% 11%;
+  --secondary: 210 20% 96%;
+  --secondary-foreground: 222 47% 15%;
 
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 16% 47%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 215 25% 45%; /* Darkened for better visibility */
 
-  --accent: 210 40% 96%;
-  --accent-foreground: 222 47% 11%;
+  --accent: 210 20% 96%;
+  --accent-foreground: 222 47% 15%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
+  --border: 214 32% 90%;
+  --input: 214 32% 90%;
   --ring: 24 95% 53%;
 
   --chart-1: 12 76% 61%;
@@ -104,31 +104,31 @@
 .dark {
   /* Deep Blue/Slate Dark Theme */
   --background: 222 47% 11%; /* Deep Navy */
-  --foreground: 210 40% 98%;
+  --foreground: 210 20% 98%; /* Soft White */
 
-  --card: 217 33% 17%;
-  --card-foreground: 210 40% 98%;
+  --card: 222 47% 13%; /* Slightly lighter than background */
+  --card-foreground: 210 20% 98%;
 
-  --popover: 222 47% 11%;
-  --popover-foreground: 210 40% 98%;
+  --popover: 222 47% 13%;
+  --popover-foreground: 210 20% 98%;
 
   --primary: 24 95% 53%; /* Keep vibrant orange */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 217 33% 17%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 217 33% 18%;
+  --secondary-foreground: 210 20% 98%;
 
-  --muted: 217 33% 17%;
-  --muted-foreground: 215 20% 65%;
+  --muted: 217 33% 18%;
+  --muted-foreground: 215 20% 70%; /* Lightened for better visibility */
 
-  --accent: 217 33% 17%;
-  --accent-foreground: 210 40% 98%;
+  --accent: 217 33% 18%;
+  --accent-foreground: 210 20% 98%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 217 33% 17%;
-  --input: 217 33% 17%;
+  --border: 217 33% 20%;
+  --input: 217 33% 20%;
   --ring: 24 95% 53%;
 
   --chart-1: 220 70% 50%;
