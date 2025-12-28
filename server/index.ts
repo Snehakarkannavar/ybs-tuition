@@ -86,13 +86,13 @@ app.use((req, res, next) => {
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
   
-  // Only start the server if not in serverless environment
-  if (!process.env.VERCEL) {
+  // Only start the server if not in serverless environment (Vercel sets AWS_LAMBDA_FUNCTION_NAME)
+  if (!process.env.AWS_LAMBDA_FUNCTION_NAME && !process.env.VERCEL) {
     httpServer.listen(port, "0.0.0.0", () => {
       log(`serving on port ${port}`);
     });
   }
 })();
 
-// Export for Vercel serverless
+// Export the Express app for Vercel serverless
 export default app;
