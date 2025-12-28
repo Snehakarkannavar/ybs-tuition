@@ -74,11 +74,11 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollToSection("/")}>
-            <div className="relative w-10 h-10 overflow-hidden rounded-full bg-white border-2 border-primary/20 transition-colors">
+            <div className="relative w-10 h-10 overflow-hidden rounded-lg transition-transform group-hover:scale-105">
               <img
-                src="/attached_assets/image_1765627778951.png"
+                src="/ybs-logo.png"
                 alt="YBS Tuition Logo"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">
