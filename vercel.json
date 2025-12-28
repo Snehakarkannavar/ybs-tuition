@@ -1,12 +1,10 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["dist/**"]
-      }
+      "src": "dist/index.cjs",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
