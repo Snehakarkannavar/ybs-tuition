@@ -7,9 +7,9 @@ const teachers = [
   {
     name: "Yeshwant Sir",
     role: "Lead Educator & Founder",
-    subjects: ["Physics", "Mathematics", "Science", "History", "Geography"],
+   
     
-    qualification: "B.Sc. Physics Graduate",
+    qualification: "Physics Graduate",
     profileImages: [
       "/attached_assets/WhatsApp Image 2025-12-27 at 11.26.14 PM (1).jpeg",
       "/attached_assets/WhatsApp Image 2025-12-27 at 11.26.14 PM.jpeg"
@@ -87,11 +87,7 @@ export default function Teachers() {
                     {/* Teacher Details Section */}
                     <div className="lg:w-1/2 p-6 flex flex-col justify-center">
                       <div className="flex flex-wrap gap-2 mb-4">
-                        {teacher.subjects.map((subject, i) => (
-                          <Badge key={i} variant="secondary" className="bg-primary/20 text-primary border-transparent">
-                            {subject}
-                          </Badge>
-                        ))}
+                        
                       </div>
                       
                       <h4 className="text-2xl font-heading font-bold mb-2">{teacher.name}</h4>
@@ -134,13 +130,13 @@ export default function Teachers() {
 
                     {/* Deepvihar Experience Section */}
                     <div className="lg:w-1/2 p-6 flex flex-col justify-center">
-                      <h5 className="text-xl font-heading font-bold text-blue-900 dark:text-blue-100 mb-4">Deepvihar Experience</h5>
+                      <h5 className="text-xl font-heading font-bold text-blue-900 dark:text-blue-100 mb-4">Experience</h5>
                       <p className="text-sm text-blue-800 dark:text-blue-200 leading-relaxed mb-4">
                         {teacher.deepviharExperience}
                       </p>
                       <div className="flex items-center gap-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                        <span className="text-xs font-medium text-blue-700 dark:text-blue-300">Currently Active at Deepvihar Higher Secondary School</span>
+                        <span className="text-xs font-medium text-blue-700 dark:text-blue-300">Currently Working</span>
                       </div>
                     </div>
                   </div>
