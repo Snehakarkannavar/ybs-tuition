@@ -91,7 +91,7 @@ export default function Hero() {
               size="default" 
               variant="outline" 
               className="text-sm px-6 py-4 rounded-full font-bold backdrop-blur-md bg-white/10 border-white/20 hover:bg-white/20 text-white hover:border-white/40 transition-all hover:scale-105"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Us
             </Button>
