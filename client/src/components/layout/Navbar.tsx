@@ -118,7 +118,7 @@ export default function Navbar() {
 
           <Button 
             className="bg-primary hover:bg-primary/90 text-white rounded-full font-bold shadow-lg shadow-primary/25 px-6"
-            onClick={() => window.location.href = "/contact"}
+            onClick={() => scrollToSection("#footer")}
           >
             Join Now
           </Button>
