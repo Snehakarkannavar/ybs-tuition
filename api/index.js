@@ -1,2 +1,2 @@
-// Vercel serverless function entry point
-module.exports = require('../dist/index.cjs');
+// Simply load and run the server
+require('../dist/index.cjs');

@@ -21,15 +21,15 @@ const features = [
   {
     icon: Clock,
     title: "Doubt Solving",
-    description: "Dedicated sessions to clear doubts in English, Hindi, Marathi, or Konkani.",
+    description: "Dedicated sessions to clear doubts in English, Hindi, Konkani, Marathi, or Kannada languages .",
   },
 ];
 
 const stats = [
-  { label: "Students Mentored", value: "100+" },
-  { label: "Years Experience", value: "5+" },
+  { label: "Students Mentored", value: "40+" },
+  { label: "Years Experience", value: "3+" },
   { label: "Subjects Covered", value: "8+" },
-  { label: "Success Rate", value: "100%" },
+  { label: "Success Rate", value: "90%" },
 ];
 
 export default function About() {
@@ -40,7 +40,7 @@ export default function About() {
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-blue-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Column: Image/Composition */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -57,45 +57,34 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-8 left-8 right-8 text-white">
-                <p className="font-heading font-bold text-2xl mb-2">"Education is not the learning of facts, but the training of the mind to think."</p>
-                <p className="text-white/80">- Albert Einstein</p>
+                <p className="font-heading font-bold text-2xl mb-2">"Gaining knowledge makes you better. Sharing it makes you the best.</p>
+                <p className="text-white/80">- Yeshwant </p>
               </div>
             </div>
             
-            {/* Floating Badge */}
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="absolute -bottom-6 -right-6 md:bottom-10 md:-right-10 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-border max-w-[200px]"
-            >
-              <div className="text-4xl font-heading font-bold text-primary mb-1">5+</div>
-              <div className="text-sm font-medium text-muted-foreground">Years of shaping bright futures</div>
-            </motion.div>
           </motion.div>
 
           {/* Right Column: Content */}
-          <div className="space-y-10">
+          <div className="space-y-5 -mt-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">About YBS Tuition</h2>
-              <h3 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-                Yeshwant Beyond <br /><span className="text-primary">Studies</span>
-              </h3>
+              
+              <h4 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+                Yeshwant Beyond <span className="text-primary">Studies</span>
+              </h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At YBS Tuition, we believe that every student has the potential to excel. 
-                Our mission is to move beyond traditional rote learning and foster a deep 
-                conceptual understanding of subjects. We create a supportive environment 
-                where curiosity is encouraged and doubts are welcomed.
+               At YBS Tuition, we believe every student can excel. 
+               We go beyond rote learning to build strong conceptual understanding in a
+                supportive environment where curiosity and questions are encouraged.
               </p>
             </motion.div>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -118,7 +107,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-border">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center md:text-left">
+                <div key={index} className="text-left">
                   <div className="text-3xl font-heading font-bold text-foreground mb-1">{stat.value}</div>
                   <div className="text-xs uppercase tracking-wider text-muted-foreground">{stat.label}</div>
                 </div>

@@ -46,8 +46,9 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Teachers", href: "#teachers" },
     { name: "Gallery", href: "#gallery" },
+    { name: "Instagram", href: "#instagram" },
     { name: "Reviews", href: "#reviews" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "#footer" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -73,7 +74,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer" onClick={() => scrollToSection("/")}>
-            <div className="relative w-10 h-10 overflow-hidden rounded-full bg-white border-2 border-primary/20 group-hover:border-primary transition-colors">
+            <div className="relative w-10 h-10 overflow-hidden rounded-full bg-white border-2 border-primary/20 transition-colors">
               <img
                 src="/attached_assets/image_1765627778951.png"
                 alt="YBS Tuition Logo"
@@ -84,9 +85,7 @@ export default function Navbar() {
               <span className={`font-heading font-bold text-lg leading-tight tracking-tight ${scrolled ? 'text-foreground' : 'text-foreground md:text-white md:mix-blend-difference'}`}>
                 YBS Tuition
               </span>
-              <span className={`text-[10px] uppercase tracking-wider font-medium opacity-80 ${scrolled ? 'text-muted-foreground' : 'text-muted-foreground md:text-white/80 md:mix-blend-difference'}`}>
-                Yeshwant Beyond Studies
-              </span>
+              
             </div>
         </Link>
 
@@ -119,7 +118,7 @@ export default function Navbar() {
 
           <Button 
             className="bg-primary hover:bg-primary/90 text-white rounded-full font-bold shadow-lg shadow-primary/25 px-6"
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => window.location.href = "/contact"}
           >
             Join Now
           </Button>
@@ -169,7 +168,10 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="flex gap-4 mt-4">
-                 <Button className="w-full bg-primary font-bold">
+                 <Button 
+                   className="w-full bg-primary font-bold"
+                   onClick={() => window.location.href = "/contact"}
+                 >
                     Enroll Now
                  </Button>
               </div>

@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-slate-200 border-t border-slate-800">
+    <footer id="footer" className="bg-slate-900 text-slate-200 border-t border-slate-800">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           
@@ -22,14 +22,11 @@ export default function Footer() {
               Yeshwant Beyond Studies - where education meets excellence.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-slate-400 hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/ybs.tuition/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/yeshwant.karkannavar/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -52,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><span className="text-slate-400">Class 6th - 10th (All Subjects)</span></li>
               <li><span className="text-slate-400">Class 11th & 12th Science</span></li>
-              <li><span className="text-slate-400">Physics & Chemistry</span></li>
+              <li><span className="text-slate-400">Physics</span></li>
               <li><span className="text-slate-400">Board Exam Preparation</span></li>
               <li><span className="text-slate-400">Concept-Focused Learning</span></li>
             </ul>
@@ -65,7 +62,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-slate-400">
-                  Bld. No. 135 2/4, MPT Colony, Headland Sada (Opp. Kitchen Mate), Goa
+                  C type MPT Colony, Headland Sada (Near Deepvihar High School), Goa
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -74,20 +71,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <span className="text-slate-400">info@ybstuition.com</span>
+                <span className="text-slate-400">ybstuition@gmail.com</span>
               </li>
             </ul>
           </div>
 
         </div>
 
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {currentYear} YBS Tuition. All rights reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-          </div>
-        </div>
+        
       </div>
     </footer>
   );

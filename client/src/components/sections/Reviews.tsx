@@ -11,26 +11,26 @@ import {
 
 const reviews = [
   {
-    name: "Aditi S.",
-    grade: "Class 10 Student",
+    name: "Ananya",
+    grade: "Class 8 Student",
     text: "YBS Tuition helped me understand concepts I struggled with for years. Yeshwant Sir's teaching style is unique and very easy to grasp.",
     rating: 5,
   },
   {
-    name: "Rahul M.",
+    name: "Aradhya",
     grade: "Class 9 Student",
     text: "The best part is the friendly environment. I can ask doubts without hesitation. My grades improved significantly in Science.",
     rating: 5,
   },
   {
-    name: "Mrs. Patil",
+    name: "Mrs. Payal Patil",
     grade: "Parent",
     text: "I've seen a huge boost in my son's confidence. The personal attention they provide is commendable. Highly recommended!",
-    rating: 5,
+    rating: 4,
   },
   {
-    name: "Sneha K.",
-    grade: "Class 12 Student",
+    name: "Ayush",
+    grade: "Class 11 Student",
     text: "Physics was my nightmare until I joined YBS. Now it's my favorite subject. The notes are super helpful for board prep.",
     rating: 5,
   },

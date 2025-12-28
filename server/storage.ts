@@ -1,5 +1,23 @@
-import { type User, type InsertUser } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { z } from "zod";
+
+// User types
+export interface User {
+  id: string;
+  username: string;
+  password: string;
+}
+
+export interface InsertUser {
+  username: string;
+  password: string;
+}
+
+// Zod schema for validation
+export const insertUserSchema = z.object({
+  username: z.string(),
+  password: z.string(),
+});
 
 // modify the interface with any CRUD methods
 // you might need
