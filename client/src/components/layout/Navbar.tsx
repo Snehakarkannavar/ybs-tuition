@@ -118,7 +118,7 @@ export default function Navbar() {
 
           <Button 
             className="bg-primary hover:bg-primary/90 text-white rounded-full font-bold shadow-lg shadow-primary/25 px-6"
-            onClick={() => scrollToSection("#footer")}
+            onClick={() => window.open("https://forms.gle/ZLgA72nza15Rsd8b7", "_blank")}
           >
             Join Now
           </Button>
@@ -170,7 +170,7 @@ export default function Navbar() {
               <div className="flex gap-4 mt-4">
                  <Button 
                    className="w-full bg-primary font-bold"
-                   onClick={() => window.location.href = "/contact"}
+                   onClick={() => window.open("https://forms.gle/ZLgA72nza15Rsd8b7", "_blank")}
                  >
                     Enroll Now
                  </Button>
